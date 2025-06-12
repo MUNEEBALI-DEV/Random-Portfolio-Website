@@ -174,7 +174,9 @@ img {
 .img-div img {
   transition: all 0.5s ease-in-out;
 }
-
+.proj-card-hover{
+  cursor: pointer;
+}
 .proj-card-hover:hover {
   .img-div img {
     transform: scale(1.2);
@@ -217,6 +219,31 @@ form .form-control input{
   color: #deff58;
   cursor: pointer;
 }
-
+.auto-type-1,.auto-type-2,.auto-type-3{
+   display: inline-flex;
+  align-items: center;
+}
+.auto-type-1::after,.auto-type-2::after,.auto-type-3::after{
+  content: " ";
+  width: 3px;
+  height: 40px;
+  background-color: #e0f780;;
+  margin-left: 5px;
+}
 /* //Footer */
 /* //Main */
+.explore-my-work{
+   display: inline;
+  }
+@media (max-width:450px) {
+  .explore-my-work{
+    display: block;
+    text-align: center;
+    margin-block: 10px;
+  }
+  .build-your-website{
+    display: block;
+    margin-inline: auto;
+  }
+  
+}
